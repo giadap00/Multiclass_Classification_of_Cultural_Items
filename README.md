@@ -24,6 +24,7 @@ The models are trained and evaluated on the sapienzanlp/nlp2025_hw1_cultural_dat
 
 ## Methodology
 ### 1. LM-Based Classifier
+`model1.ipynb`
 - **Models Used**: distilbert-base-uncased and roberta-base.
 
 - **Approach**: The text fields were concatenated and tokenized. The first 3 layers of the Transformer encoder were frozen to prevent catastrophic forgetting and reduce overfitting.
@@ -31,6 +32,7 @@ The models are trained and evaluated on the sapienzanlp/nlp2025_hw1_cultural_dat
 - **Selection**: DistilBERT outperformed RoBERTa on validation accuracy and was selected as the primary LM-based classifier.
 
 ### 2. Non-LM Based Classifier
+`model2.ipynb`
 - **Models Used**: Logistic Regression, Random Forest, and Support Vector Machine (SVM).
 
 - **Features Extracted**:
